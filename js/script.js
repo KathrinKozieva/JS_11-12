@@ -26,8 +26,8 @@ $(function() {
         },
         {
             headingSmall: 'My contacts: ',
-            text1: '+380505976015',
-            myLink: ' href="http://vk.com/id175036751" class="text1">vk.com'
+            text: '+380505976015',
+            myLink: ' href="http://vk.com/id175036751" class="text">vk.com'
         }
     ];
   
