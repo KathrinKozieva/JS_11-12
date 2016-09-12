@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kozeva Hometask JS 11-12</title>
+	<link rel="stylesheet" href="css/style.carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/jquery.carousel.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<p class="heading">My jQuery Plagin:</p>
+
+<div class="carousel">
+	<div class="carousel__arrow carousel__arrow__left"><span>&#60;</span></div>
+	<div class="carousel__hider">
+		<ul class="carousel__list">
+		<li class="carousel__element"><img class="carousel__img" src="img/1.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 1</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/2.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 2</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/3.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 3</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/4.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 4</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/5.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 5</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/6.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 6</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/7.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 7</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/8.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 8</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/9.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 9</p></li>
+		<li class="carousel__element"><img class="carousel__img" src="img/10.jpg" alt="nice photo"><p class="carousel__paragraph" >Waterfall 10</p></li>
+	</ul>
+	</div>
+	<div class="carousel__arrow carousel__arrow__right"><span>&#62;</span></div>
+</div>
+
+<div class="tmpl__wrap">
+	<p class="heading">Simple JavaScript Templating:</p>
+	<script type="text/html" id="item_tmpl">
+	  <% for ( var i = 0; i < data.length; i++ ) { %>
+	    <h1 class="center"><%= data[i].heading %></h1>
+	    <h4 class="center"><%= data[i].headingSmall %></h4>
+	    <img<%= data[i].photo %>
+	    <p class="text"><%= data[i].text %> </p>
+	    <p class="text1"><%= data[i].text1 %> </p>
+	    <a<%= data[i].myLink %> </a>
+	  <% }; %>
+	</script>
+</div>
+
+</body>
+</html>
